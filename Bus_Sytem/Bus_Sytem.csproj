@@ -1,0 +1,554 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{6B3132EC-B15E-4F74-A996-35F20AD3700A}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Bus_Sytem</RootNamespace>
+    <AssemblyName>Bus_Sytem</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ADMINLOGIN.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ADMINLOGIN.Designer.cs">
+      <DependentUpon>ADMINLOGIN.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ADMINPAGE.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ADMINPAGE.Designer.cs">
+      <DependentUpon>ADMINPAGE.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BUSDATA.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BUSDATA.Designer.cs">
+      <DependentUpon>BUSDATA.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EBOOKINGDATA.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EBOOKINGDATA.Designer.cs">
+      <DependentUpon>EBOOKINGDATA.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EBUSDATA.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EBUSDATA.Designer.cs">
+      <DependentUpon>EBUSDATA.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EMPLOYEEDATA.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EMPLOYEEDATA.Designer.cs">
+      <DependentUpon>EMPLOYEEDATA.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EMPLOYEELOGIN.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EMPLOYEELOGIN.Designer.cs">
+      <DependentUpon>EMPLOYEELOGIN.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EMPLOYEEPAGE.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EMPLOYEEPAGE.Designer.cs">
+      <DependentUpon>EMPLOYEEPAGE.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LOGIN.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LOGIN.Designer.cs">
+      <DependentUpon>LOGIN.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MANAGERDATA.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MANAGERDATA.Designer.cs">
+      <DependentUpon>MANAGERDATA.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MANAGERLOGIN.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MANAGERLOGIN.Designer.cs">
+      <DependentUpon>MANAGERLOGIN.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MANAGERPAGE.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MANAGERPAGE.Designer.cs">
+      <DependentUpon>MANAGERPAGE.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MBOOKINGDATA.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MBOOKINGDATA.Designer.cs">
+      <DependentUpon>MBOOKINGDATA.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MBUSDATA.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MBUSDATA.Designer.cs">
+      <DependentUpon>MBUSDATA.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MCLIENTDATA.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MCLIENTDATA.Designer.cs">
+      <DependentUpon>MCLIENTDATA.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MEMPLOYEEDATA.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MEMPLOYEEDATA.Designer.cs">
+      <DependentUpon>MEMPLOYEEDATA.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Online_BusDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Online_BusDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Online_BusDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Online_BusDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Online_BusDataSet10.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Online_BusDataSet10.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Online_BusDataSet11.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Online_BusDataSet11.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Online_BusDataSet12.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Online_BusDataSet12.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Online_BusDataSet131.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Online_BusDataSet131.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Online_BusDataSet14.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Online_BusDataSet14.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Online_BusDataSet15.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Online_BusDataSet15.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Online_BusDataSet16.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Online_BusDataSet16.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Online_BusDataSet17.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Online_BusDataSet17.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Online_BusDataSet18.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Online_BusDataSet18.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Online_BusDataSet19.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Online_BusDataSet19.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Online_BusDataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Online_BusDataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Online_BusDataSet20.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Online_BusDataSet20.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Online_BusDataSet3.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Online_BusDataSet3.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Online_BusDataSet4.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Online_BusDataSet4.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Online_BusDataSet5.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Online_BusDataSet5.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Online_BusDataSet6.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Online_BusDataSet6.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Online_BusDataSet7.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Online_BusDataSet7.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Online_BusDataSet8.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Online_BusDataSet8.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Online_BusDataSet9.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Online_BusDataSet9.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="ADMINLOGIN.resx">
+      <DependentUpon>ADMINLOGIN.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ADMINPAGE.resx">
+      <DependentUpon>ADMINPAGE.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BUSDATA.resx">
+      <DependentUpon>BUSDATA.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EBOOKINGDATA.resx">
+      <DependentUpon>EBOOKINGDATA.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EBUSDATA.resx">
+      <DependentUpon>EBUSDATA.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EMPLOYEEDATA.resx">
+      <DependentUpon>EMPLOYEEDATA.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EMPLOYEELOGIN.resx">
+      <DependentUpon>EMPLOYEELOGIN.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EMPLOYEEPAGE.resx">
+      <DependentUpon>EMPLOYEEPAGE.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LOGIN.resx">
+      <DependentUpon>LOGIN.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MANAGERDATA.resx">
+      <DependentUpon>MANAGERDATA.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MANAGERLOGIN.resx">
+      <DependentUpon>MANAGERLOGIN.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MANAGERPAGE.resx">
+      <DependentUpon>MANAGERPAGE.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MBOOKINGDATA.resx">
+      <DependentUpon>MBOOKINGDATA.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MBUSDATA.resx">
+      <DependentUpon>MBUSDATA.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MCLIENTDATA.resx">
+      <DependentUpon>MCLIENTDATA.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MEMPLOYEEDATA.resx">
+      <DependentUpon>MEMPLOYEEDATA.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="Online_BusDataSet.xsc">
+      <DependentUpon>Online_BusDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Online_BusDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Online_BusDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Online_BusDataSet.xss">
+      <DependentUpon>Online_BusDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Online_BusDataSet1.xsc">
+      <DependentUpon>Online_BusDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="Online_BusDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Online_BusDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Online_BusDataSet1.xss">
+      <DependentUpon>Online_BusDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="Online_BusDataSet10.xsc">
+      <DependentUpon>Online_BusDataSet10.xsd</DependentUpon>
+    </None>
+    <None Include="Online_BusDataSet10.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Online_BusDataSet10.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Online_BusDataSet10.xss">
+      <DependentUpon>Online_BusDataSet10.xsd</DependentUpon>
+    </None>
+    <None Include="Online_BusDataSet11.xsc">
+      <DependentUpon>Online_BusDataSet11.xsd</DependentUpon>
+    </None>
+    <None Include="Online_BusDataSet11.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Online_BusDataSet11.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Online_BusDataSet11.xss">
+      <DependentUpon>Online_BusDataSet11.xsd</DependentUpon>
+    </None>
+    <None Include="Online_BusDataSet12.xsc">
+      <DependentUpon>Online_BusDataSet12.xsd</DependentUpon>
+    </None>
+    <None Include="Online_BusDataSet12.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Online_BusDataSet12.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Online_BusDataSet12.xss">
+      <DependentUpon>Online_BusDataSet12.xsd</DependentUpon>
+    </None>
+    <None Include="Online_BusDataSet131.xsc">
+      <DependentUpon>Online_BusDataSet131.xsd</DependentUpon>
+    </None>
+    <None Include="Online_BusDataSet131.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Online_BusDataSet131.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Online_BusDataSet131.xss">
+      <DependentUpon>Online_BusDataSet131.xsd</DependentUpon>
+    </None>
+    <None Include="Online_BusDataSet14.xsc">
+      <DependentUpon>Online_BusDataSet14.xsd</DependentUpon>
+    </None>
+    <None Include="Online_BusDataSet14.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Online_BusDataSet14.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Online_BusDataSet14.xss">
+      <DependentUpon>Online_BusDataSet14.xsd</DependentUpon>
+    </None>
+    <None Include="Online_BusDataSet15.xsc">
+      <DependentUpon>Online_BusDataSet15.xsd</DependentUpon>
+    </None>
+    <None Include="Online_BusDataSet15.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Online_BusDataSet15.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Online_BusDataSet15.xss">
+      <DependentUpon>Online_BusDataSet15.xsd</DependentUpon>
+    </None>
+    <None Include="Online_BusDataSet16.xsc">
+      <DependentUpon>Online_BusDataSet16.xsd</DependentUpon>
+    </None>
+    <None Include="Online_BusDataSet16.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Online_BusDataSet16.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Online_BusDataSet16.xss">
+      <DependentUpon>Online_BusDataSet16.xsd</DependentUpon>
+    </None>
+    <None Include="Online_BusDataSet17.xsc">
+      <DependentUpon>Online_BusDataSet17.xsd</DependentUpon>
+    </None>
+    <None Include="Online_BusDataSet17.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Online_BusDataSet17.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Online_BusDataSet17.xss">
+      <DependentUpon>Online_BusDataSet17.xsd</DependentUpon>
+    </None>
+    <None Include="Online_BusDataSet18.xsc">
+      <DependentUpon>Online_BusDataSet18.xsd</DependentUpon>
+    </None>
+    <None Include="Online_BusDataSet18.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Online_BusDataSet18.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Online_BusDataSet18.xss">
+      <DependentUpon>Online_BusDataSet18.xsd</DependentUpon>
+    </None>
+    <None Include="Online_BusDataSet19.xsc">
+      <DependentUpon>Online_BusDataSet19.xsd</DependentUpon>
+    </None>
+    <None Include="Online_BusDataSet19.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Online_BusDataSet19.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Online_BusDataSet19.xss">
+      <DependentUpon>Online_BusDataSet19.xsd</DependentUpon>
+    </None>
+    <None Include="Online_BusDataSet2.xsc">
+      <DependentUpon>Online_BusDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="Online_BusDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Online_BusDataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Online_BusDataSet2.xss">
+      <DependentUpon>Online_BusDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="Online_BusDataSet20.xsc">
+      <DependentUpon>Online_BusDataSet20.xsd</DependentUpon>
+    </None>
+    <None Include="Online_BusDataSet20.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Online_BusDataSet20.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Online_BusDataSet20.xss">
+      <DependentUpon>Online_BusDataSet20.xsd</DependentUpon>
+    </None>
+    <None Include="Online_BusDataSet3.xsc">
+      <DependentUpon>Online_BusDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="Online_BusDataSet3.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Online_BusDataSet3.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Online_BusDataSet3.xss">
+      <DependentUpon>Online_BusDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="Online_BusDataSet4.xsc">
+      <DependentUpon>Online_BusDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="Online_BusDataSet4.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Online_BusDataSet4.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Online_BusDataSet4.xss">
+      <DependentUpon>Online_BusDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="Online_BusDataSet5.xsc">
+      <DependentUpon>Online_BusDataSet5.xsd</DependentUpon>
+    </None>
+    <None Include="Online_BusDataSet5.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Online_BusDataSet5.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Online_BusDataSet5.xss">
+      <DependentUpon>Online_BusDataSet5.xsd</DependentUpon>
+    </None>
+    <None Include="Online_BusDataSet6.xsc">
+      <DependentUpon>Online_BusDataSet6.xsd</DependentUpon>
+    </None>
+    <None Include="Online_BusDataSet6.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Online_BusDataSet6.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Online_BusDataSet6.xss">
+      <DependentUpon>Online_BusDataSet6.xsd</DependentUpon>
+    </None>
+    <None Include="Online_BusDataSet7.xsc">
+      <DependentUpon>Online_BusDataSet7.xsd</DependentUpon>
+    </None>
+    <None Include="Online_BusDataSet7.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Online_BusDataSet7.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Online_BusDataSet7.xss">
+      <DependentUpon>Online_BusDataSet7.xsd</DependentUpon>
+    </None>
+    <None Include="Online_BusDataSet8.xsc">
+      <DependentUpon>Online_BusDataSet8.xsd</DependentUpon>
+    </None>
+    <None Include="Online_BusDataSet8.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Online_BusDataSet8.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Online_BusDataSet8.xss">
+      <DependentUpon>Online_BusDataSet8.xsd</DependentUpon>
+    </None>
+    <None Include="Online_BusDataSet9.xsc">
+      <DependentUpon>Online_BusDataSet9.xsd</DependentUpon>
+    </None>
+    <None Include="Online_BusDataSet9.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Online_BusDataSet9.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Online_BusDataSet9.xss">
+      <DependentUpon>Online_BusDataSet9.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
